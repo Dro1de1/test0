@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition-duration: 0s;
+}
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 200%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.parallaxLayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.front {
+    background-color: rgba(7, 188, 243);
+    transform: translateZ(0);
+}
+.middle {
+    background-color: rgba(7, 243, 58);
+    transform: translateZ(-300px) scale(2);
+}
+.back {
+    background-color: rgba(200, 243, 7);
+    transform: translateZ(-600px) scale(3);
+}
+.title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+#debug * {
+    border:2px solid black;
+}
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+#group1 {
+    z-index: -3;
+}
+#group2 {
+    z-index: 2;
+}
+#group3 {
+    z-index: 2;
+}
+#group4 {
+    z-index: -2;
+}
+#group5 {
+    z-index: -4;
+}
